@@ -1,0 +1,36 @@
+[
+  '{{repeat(20, 30)}}',
+  {
+    id: '{{objectId()}}',
+    index: '{{index()}}',
+    doc_type: 'race',
+    body: {
+      race_number: '{{integer(10, 100)}}',
+      info: function(tags) {
+        var planes = ['Airbus', 'Boeing', 'Cessna', 'Craic', 'Comna', 'Иркут'];
+        var companies = ['Utair', 'Catar', 'Ural', 'Aeroflot', 'Turkish', 'Fly one', 'Azur', 'Malta'];
+      	return planes[tags.integer(0, planes.length - 1)] + ' ' + companies[tags.integer(0, companies.length - 1)] + '';
+      },
+      from: function(tags) {
+      	return tags.country() + ' ' + tags.city();
+      },
+      to: function(tags) {
+      	return tags.country() + ' ' + tags.city();
+      },
+      sold_tickets_count: '{{integer(10, 100)}}',
+      remaining_tickets_count: '{{integer(0, 100)}}',
+      date_out: function(tags) {
+        return tags.date(new Date(2023, 4, 1), new Date(),"YYYY-MM-ddThh:mm:ss");
+      },
+      date_out_fact: function(tags) {
+        return tags.date(new Date(2023, 4, 1), new Date(),"YYYY-MM-ddThh:mm:ss");
+      },
+      date_in: function(tags) {
+        return tags.date(new Date(2023, 4, 1), new Date(),"YYYY-MM-ddThh:mm:ss");
+      },
+      date_in_fact: function(tags) {
+        return tags.date(new Date(2023, 4, 1), new Date(),"YYYY-MM-ddThh:mm:ss");
+      }
+    }
+  }
+]

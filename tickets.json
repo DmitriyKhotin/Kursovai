@@ -1,0 +1,233 @@
+[
+  {
+    "index": "ticket",
+    "id": "643c0a96a900894d7365d82b",
+    "body": {
+      "id": "643c0a96dfc847985ac60dc0",
+      "personal_data": "Female Olga Mills Olga51@hotmail.com +48 94 867 48 85 Assistant 81 Avon West Florinestad 26139 Willms Wells Suite 857",
+      "buy_date": "2016-02-26T05:16:16.444Z",
+      "amount": "8605.32",
+      "race_id": "643c0a96e30e8aebb3d4113e"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a966150ce7299c0a30f",
+    "body": {
+      "id": "643c0a9640362cf4140b71a0",
+      "personal_data": "Male Earnest Rau Earnest0@gmail.com +48 73 773 63 06 Engineer 17 Buckinghamshire Lake Lilly 100 Michelle Mount Apt. 624",
+      "buy_date": "2011-05-26T14:03:35.388Z",
+      "amount": "1208.57",
+      "race_id": "643c0a964d6258b67557d331"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a96528bf2c8cd5809cc",
+    "body": {
+      "id": "643c0a961215e982edfab4a6",
+      "personal_data": "Male Chad Casper Chad_Casper@hotmail.com +48 22 774 98 99 Orchestrator 26 Cambridgeshire Orenport 37923 Morris Dam Apt. 524",
+      "buy_date": "2011-09-11T09:56:33.297Z",
+      "amount": "3071.79",
+      "race_id": "643c0a961d67f65dece49aad"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a96300e426ebec1ae3d",
+    "body": {
+      "id": "643c0a9666c3be09a0348e8f",
+      "personal_data": "Male Benny Fay Benny.Fay@yahoo.com +48 71 585 16 02 Developer 39 Berkshire North Sydneyfurt 41547 Warren Light Apt. 105",
+      "buy_date": "2019-05-15T19:12:09.963Z",
+      "amount": "5078.67",
+      "race_id": "643c0a9611d429ff6201ed75"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a96a6d2687033fa1f8d",
+    "body": {
+      "id": "643c0a96aab01ddea136aa5c",
+      "personal_data": "Male Rudolph Mueller Rudolph_Mueller56@yahoo.com +48 06 501 19 20 Agent 1 Cambridgeshire North Fabian 9071 Corbin Cape Suite 413",
+      "buy_date": "2021-03-30T15:16:58.244Z",
+      "amount": "2893.42",
+      "race_id": "643c0a966b4042ba564e3f63"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a969d13dd96ce2326a8",
+    "body": {
+      "id": "643c0a96fede9107a90229ef",
+      "personal_data": "Male Lowell Jones Lowell.Jones@hotmail.com +48 86 463 51 07 Administrator 55 Cambridgeshire East Ginoborough 6623 Florine Cape Apt. 474",
+      "buy_date": "2011-03-07T14:11:17.716Z",
+      "amount": "9499.72",
+      "race_id": "643c0a96d25a0ef6ae74069b"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a96c2753b4f3d1f2ee4",
+    "body": {
+      "id": "643c0a968c9df13b683c6d0d",
+      "personal_data": "Female Ann Dickinson Ann_Dickinson57@gmail.com +48 46 702 50 68 Designer 95 Bedfordshire New Ali 752 Deshaun Shoal Apt. 286",
+      "buy_date": "2023-01-09T16:17:12.192Z",
+      "amount": "3142.60",
+      "race_id": "643c0a96bb91b3893620bb39"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a96d1d434b4ee5ccf9b",
+    "body": {
+      "id": "643c0a964029c1c4c901c501",
+      "personal_data": "Male Terrance Bogan Terrance.Bogan77@hotmail.com +48 17 931 06 29 Planner 75 Berkshire East Devan 3660 Lebsack Ramp Suite 629",
+      "buy_date": "2021-05-27T19:58:07.102Z",
+      "amount": "6713.15",
+      "race_id": "643c0a96b2685762ad951fa8"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a96680fcb19863edc6d",
+    "body": {
+      "id": "643c0a96b1182b42792e3128",
+      "personal_data": "Female Martha Koch Martha56@gmail.com +48 12 199 06 50 Representative 44 Borders Lake Brandon 307 Katherine Burgs Suite 516",
+      "buy_date": "2019-12-22T15:33:29.687Z",
+      "amount": "5609.21",
+      "race_id": "643c0a963cedcd8833ee3738"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a964e82f84e6e5cff32",
+    "body": {
+      "id": "643c0a96a140dcd439563527",
+      "personal_data": "Male Bradford Hodkiewicz Bradford_Hodkiewicz71@gmail.com +48 19 699 39 41 Liaison 23 Buckinghamshire Anthonytown 56635 Howell Mews Apt. 419",
+      "buy_date": "2021-11-13T14:40:20.012Z",
+      "amount": "1807.93",
+      "race_id": "643c0a96bb91b3893620bb39"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a96b9e1aceb1f68719f",
+    "body": {
+      "id": "643c0a962d629665b21f02ee",
+      "personal_data": "Male Alfredo Luettgen Alfredo2@yahoo.com +48 61 725 18 31 Consultant 18 Avon Mathewview 7976 MacGyver Mountain Suite 857",
+      "buy_date": "2017-10-03T01:30:25.134Z",
+      "amount": "9548.09",
+      "race_id": "643c0a964cb1ba236d8df3da"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a9618d21d303c12e227",
+    "body": {
+      "id": "643c0a96cbf06567abc46386",
+      "personal_data": "Female Brandy Lubowitz Brandy.Lubowitz39@yahoo.com +48 41 512 09 55 Manager 71 Bedfordshire Cummingsborough 950 Tate Village Apt. 618",
+      "buy_date": "2015-07-07T20:06:26.865Z",
+      "amount": "3686.75",
+      "race_id": "643c0a961858096f222a49d3"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a968bbfaa459019a428",
+    "body": {
+      "id": "643c0a961c515b78e8a779a5",
+      "personal_data": "Male Cecil Douglas Cecil.Douglas@gmail.com +48 47 392 48 35 Agent 19 Borders Georgiannabury 743 Bartoletti Roads Apt. 266",
+      "buy_date": "2010-09-09T11:45:48.925Z",
+      "amount": "4244.43",
+      "race_id": "643c0a96d25a0ef6ae74069b"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a9661164c77ab70a4d9",
+    "body": {
+      "id": "643c0a96c087aa239a1c4176",
+      "personal_data": "Male Darrell Gulgowski Darrell_Gulgowski@hotmail.com +48 87 839 77 01 Executive 70 Borders Albatown 952 Bosco Cove Suite 256",
+      "buy_date": "2018-08-13T12:29:23.312Z",
+      "amount": "1340.49",
+      "race_id": "643c0a960eda7c9dceb3a86d"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a964ba5397c2eaea04a",
+    "body": {
+      "id": "643c0a96d7532e3badb344f7",
+      "personal_data": "Male Clint Feest Clint54@yahoo.com +48 82 672 65 32 Orchestrator 54 Bedfordshire Greenville 117 Antonio Rue Apt. 708",
+      "buy_date": "2014-07-27T18:13:08.405Z",
+      "amount": "3438.66",
+      "race_id": "643c0a9602b0dbe7d0a5d012"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a962b27d8bc2452e734",
+    "body": {
+      "id": "643c0a9681ddd19b3dbe38cf",
+      "personal_data": "Female Velma Gislason Velma.Gislason78@hotmail.com +48 33 510 52 23 Orchestrator 90 Berkshire Lake Verna 4791 Lueilwitz Circles Apt. 612",
+      "buy_date": "2015-12-07T13:29:39.482Z",
+      "amount": "4944.96",
+      "race_id": "643c0a961858096f222a49d3"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a96ef766619ed9ad22e",
+    "body": {
+      "id": "643c0a962c202ec588f28468",
+      "personal_data": "Male Wesley Jakubowski Wesley_Jakubowski@yahoo.com +48 74 807 32 89 Liaison 42 Borders Gardena 782 Steve Walk Suite 422",
+      "buy_date": "2012-10-21T21:09:11.314Z",
+      "amount": "2132.00",
+      "race_id": "643c0a96b71e36343f366690"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a960fac4fff5ab8ba6b",
+    "body": {
+      "id": "643c0a96981f45b366b83a4c",
+      "personal_data": "Male Randolph Stamm Randolph9@gmail.com +48 27 104 14 21 Orchestrator 40 Buckinghamshire Mullerside 6947 Rudolph Corners Apt. 254",
+      "buy_date": "2018-01-13T01:35:50.497Z",
+      "amount": "5259.92",
+      "race_id": "643c0a964d6258b67557d331"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a96f3074292e5b3725a",
+    "body": {
+      "id": "643c0a96252a9885580be6d2",
+      "personal_data": "Female Lora Zulauf Lora.Zulauf70@yahoo.com +48 97 336 44 63 Consultant 95 Borders Murazikstad 600 Rohan Shores Apt. 799",
+      "buy_date": "2018-10-16T13:18:02.668Z",
+      "amount": "5492.18",
+      "race_id": "643c0a96eaa84b3a91ac9339"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a965745aee92bf5ab19",
+    "body": {
+      "id": "643c0a967e04530841a18873",
+      "personal_data": "Male Johnathan Hirthe Johnathan15@yahoo.com +48 21 466 65 78 Technician 36 Bedfordshire West New York 47192 Hassan Corner Suite 081",
+      "buy_date": "2016-06-08T18:56:05.799Z",
+      "amount": "5895.27",
+      "race_id": "643c0a96bb91b3893620bb39"
+    }
+  },
+  {
+    "index": "ticket",
+    "id": "643c0a96beb28b225bf2fd98",
+    "body": {
+      "id": "643c0a96607aa666ef183cb9",
+      "personal_data": "Male Ray Walker Ray80@hotmail.com +48 25 014 96 25 Developer 30 Berkshire Port Lenorebury 6543 Torp Mountains Suite 305",
+      "buy_date": "2021-10-05T05:52:57.848Z",
+      "amount": "4305.87",
+      "race_id": "643c0a96b463b04b634e402c"
+    }
+  }
+]

@@ -1,0 +1,15 @@
+[
+  '{{repeat(20, 30)}}',
+  {
+    id: '{{objectId()}}',
+    index: '{{index()}}',
+    doc_type: 'ticket',
+    body: {
+      id: '{{objectId()}}',
+      personal_data: '{{gender()}} {{firstName()}} {{surname()}} {{email()}} +1 {{phone()}} {{integer(100, 999)}} {{street()}}, {{city()}}, {{state()}}, {{integer(100, 10000)}}',
+      buy_date: '{{date(new Date(2010, 0, 1), new Date(),"dd-MM-YYYY")}}',
+      amount: '{{integer(1000, 10000)}}',
+      race_id: '{{objectId()}}',
+    }
+  }
+]

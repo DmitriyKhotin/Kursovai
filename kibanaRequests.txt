@@ -1,0 +1,150 @@
+GET _cat/indices
+
+GET ticket/_search
+
+GET ticket/_search
+{
+    "_source": ["id", "personal_data", "buy_date", "amount", "race_id"],
+    "query": {
+        "query_string": {
+            "query": "A great gob is Orchestrator in the Cambridgeshire"
+        }
+    }
+}
+
+GET ticket/_search
+{
+    "_source": ["id", "personal_data", "buy_date", "amount", "race_id"],
+    "query": {
+        "query_string": {
+            "query": "A great gob is Orchestrator"
+        }
+    }
+}
+
+GET ticket/_search
+{
+    "_source": ["id", "personal_data", "buy_date", "amount", "race_id"],
+    "query": {
+        "query_string": {
+            "query": "A great gob is Orchestrator and goof if guy lives in Buckinghamshire"
+        }
+    }
+}
+
+
+GET /_analyze
+{
+  "text": "A great gob is Orchestrator and good if female guy lives in Buckinghamshire",
+  "tokenizer":"standard",
+  "filter":[
+    "lowercase",
+    {
+       "type":"stop",
+       "stopwords": ["male", "female"]
+    },
+    {
+        "type": "snowball",
+        "language": "English"
+    }
+  ]
+}
+
+GET ticket/_search
+{
+  "size": 0,
+  "aggs": {
+    "year": {
+      "date_histogram": {
+        "field": "buy_date",
+        "calendar_interval": "year"
+      },
+      "aggs": {
+        "tickets_number": {
+          "terms": {
+            "field": "race_id"
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+GET _cat/indices
+
+GET race/_search
+
+GET race/_search
+{
+    "_source": ["race_number", "info", "from", "to", "sold_tickets_count", "remaining_tickets_count", "date_out", "date_out_fact", "date_in", "date_in_fact"],
+    "query": {
+        "query_string": {
+            "query": "The flights from Bedfordshire to Buckinghamshire by Cessna airlines"
+        }
+    }
+}
+
+GET race/_search
+{
+  "size": 0,
+  "runtime_mappings": {
+    "race_number_no_delay": {
+      "type": "keyword",
+      "script": """
+        String genre = doc['genre'].value;
+        if (doc['product'].value.startsWith('Anthology')) {
+          emit(genre + ' anthology');
+        } else {
+          emit(genre);
+        }
+      """
+    }
+  },
+  "aggs": {
+    "year": {
+      "date_histogram": {
+        "field": "buy_date",
+        "calendar_interval": "year"
+      },
+      "aggs": {
+        "amount": {
+          "terms": {
+            "field": "amount"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
