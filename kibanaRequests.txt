@@ -122,7 +122,26 @@ GET race/_search
   }
 }
 
-GET /_search
+GET race/_search
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "must": [{
+        "script": {
+          "script": "doc['date_out'].value == doc['date_out_fact'].value && doc['date_in'].value == doc['date_in_fact'].value"
+        }
+      }]
+    }
+  },
+  "aggs": {
+        "amount": {
+          "terms": {
+            "field": "race_number"
+          }
+        }
+  }
+}
 
 
 
