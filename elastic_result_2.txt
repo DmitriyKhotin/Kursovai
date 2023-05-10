@@ -1,0 +1,112 @@
+#! Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security.
+{
+  "took" : 17,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 4,
+      "relation" : "eq"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : "race",
+        "_type" : "_doc",
+        "_id" : "643c0a96eaa84b3a91ac9339",
+        "_score" : 1.0,
+        "_source" : {
+          "race_number" : 823,
+          "info" : "Cessna Malta",
+          "from" : "Avon Sethborough",
+          "to" : "Borders New York",
+          "sold_tickets_count" : 31,
+          "remaining_tickets_count" : 43,
+          "date_out" : "2018-01-09T06:28:15.687Z",
+          "date_out_fact" : "2018-01-09T06:28:15.687Z",
+          "date_in" : "2018-01-10T05:28:15.687Z",
+          "date_in_fact" : "2018-01-10T05:28:15.687Z"
+        }
+      },
+      {
+        "_index" : "race",
+        "_type" : "_doc",
+        "_id" : "643c0a96f6aaf5333cccefd2",
+        "_score" : 1.0,
+        "_source" : {
+          "race_number" : 702,
+          "info" : "Иркут Fly one",
+          "from" : "Bedfordshire New Emeraldton",
+          "to" : "Buckinghamshire East Domenicochester",
+          "sold_tickets_count" : 58,
+          "remaining_tickets_count" : 10,
+          "date_out" : "2013-06-07T00:04:03.921Z",
+          "date_out_fact" : "2013-06-07T00:04:03.921Z",
+          "date_in" : "2013-06-08T13:04:03.921Z",
+          "date_in_fact" : "2013-06-08T13:04:03.921Z"
+        }
+      },
+      {
+        "_index" : "race",
+        "_type" : "_doc",
+        "_id" : "643c0a9602b0dbe7d0a5d012",
+        "_score" : 1.0,
+        "_source" : {
+          "race_number" : 169,
+          "info" : "Boeing Catar",
+          "from" : "Bedfordshire Stracketon",
+          "to" : "Avon Phoenix",
+          "sold_tickets_count" : 61,
+          "remaining_tickets_count" : 35,
+          "date_out" : "2011-09-11T17:54:03.460Z",
+          "date_out_fact" : "2011-09-11T17:54:03.460Z",
+          "date_in" : "2011-09-11T23:54:03.460Z",
+          "date_in_fact" : "2011-09-11T23:54:03.460Z"
+        }
+      },
+      {
+        "_index" : "race",
+        "_type" : "_doc",
+        "_id" : "643c0a96e30e8aebb3d4113e",
+        "_score" : 1.0,
+        "_source" : {
+          "race_number" : 702,
+          "info" : "Boeing Malta",
+          "from" : "Bedfordshire North D'angelo",
+          "to" : "Berkshire North Jeramiehaven",
+          "sold_tickets_count" : 79,
+          "remaining_tickets_count" : 5,
+          "date_out" : "2017-11-20T12:32:40.834Z",
+          "date_out_fact" : "2017-11-20T12:32:40.834Z",
+          "date_in" : "2017-11-20T23:32:40.834Z",
+          "date_in_fact" : "2017-11-20T23:32:40.834Z"
+        }
+      }
+    ]
+  },
+  "aggregations" : {
+    "amount" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : 702,
+          "doc_count" : 2
+        },
+        {
+          "key" : 169,
+          "doc_count" : 1
+        },
+        {
+          "key" : 823,
+          "doc_count" : 1
+        }
+      ]
+    }
+  }
+}
