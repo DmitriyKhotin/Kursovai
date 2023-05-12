@@ -1,0 +1,5 @@
+/usr/local/hadoop/hadoop-2.9.2/sbin/start-dfs.sh
+/usr/local/hadoop/hadoop-2.9.2/sbin/start-yarn.sh
+hdfs dfs -mkdir /chapter5
+hdfs dfs -put /home/admin/Downloads/Kursovai/*.csv /chapter5
+/usr/local/spark-2.4.6/bin/spark-submit sparkLoadCSV.py
