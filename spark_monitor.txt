@@ -1,0 +1,68 @@
+== Parsed Logical Plan ==
+GlobalLimit 8
++- LocalLimit 8
+   +- Project [cast(_id#4 as string) AS _id#30, cast(count(id)#13L as string) AS count(id)#31]
+      +- Aggregate [_id#4], [_id#4, count(id#0) AS count(id)#13L]
+         +- Filter (age#1 < 12)
+            +- Join Inner, (id#0 = passenger_id#9)
+               :- Join Inner, (_id#4 = race_id#8)
+               :  :- SubqueryAlias `race_t`
+               :  :  +- Relation[_id#4,race_number#5] csv
+               :  +- SubqueryAlias `ticket_t`
+               :     +- Relation[race_id#8,passenger_id#9] csv
+               +- SubqueryAlias `passenger_t`
+                  +- Relation[id#0,age#1] csv
+
+== Analyzed Logical Plan ==
+_id: string, count(id): string
+GlobalLimit 8
++- LocalLimit 8
+   +- Project [cast(_id#4 as string) AS _id#30, cast(count(id)#13L as string) AS count(id)#31]
+      +- Aggregate [_id#4], [_id#4, count(id#0) AS count(id)#13L]
+         +- Filter (age#1 < 12)
+            +- Join Inner, (id#0 = passenger_id#9)
+               :- Join Inner, (_id#4 = race_id#8)
+               :  :- SubqueryAlias `race_t`
+               :  :  +- Relation[_id#4,race_number#5] csv
+               :  +- SubqueryAlias `ticket_t`
+               :     +- Relation[race_id#8,passenger_id#9] csv
+               +- SubqueryAlias `passenger_t`
+                  +- Relation[id#0,age#1] csv
+
+== Optimized Logical Plan ==
+GlobalLimit 8
++- LocalLimit 8
+   +- Aggregate [_id#4], [_id#4, cast(count(id#0) as string) AS count(id)#31]
+      +- Project [_id#4, id#0]
+         +- Join Inner, (id#0 = passenger_id#9)
+            :- Project [_id#4, passenger_id#9]
+            :  +- Join Inner, (_id#4 = race_id#8)
+            :     :- Project [_id#4]
+            :     :  +- Filter isnotnull(_id#4)
+            :     :     +- Relation[_id#4,race_number#5] csv
+            :     +- Filter (isnotnull(race_id#8) && isnotnull(passenger_id#9))
+            :        +- Relation[race_id#8,passenger_id#9] csv
+            +- Project [id#0]
+               +- Filter ((isnotnull(age#1) && (age#1 < 12)) && isnotnull(id#0))
+                  +- Relation[id#0,age#1] csv
+
+== Physical Plan ==
+CollectLimit 8
++- *(4) HashAggregate(keys=[_id#4], functions=[count(id#0)], output=[_id#4, count(id)#31])
+   +- Exchange hashpartitioning(_id#4, 200)
+      +- *(3) HashAggregate(keys=[_id#4], functions=[partial_count(id#0)], output=[_id#4, count#35L])
+         +- *(3) Project [_id#4, id#0]
+            +- *(3) BroadcastHashJoin [passenger_id#9], [id#0], Inner, BuildRight
+               :- *(3) Project [_id#4, passenger_id#9]
+               :  +- *(3) BroadcastHashJoin [_id#4], [race_id#8], Inner, BuildLeft
+               :     :- BroadcastExchange HashedRelationBroadcastMode(List(input[0, string, true]))
+               :     :  +- *(1) Project [_id#4]
+               :     :     +- *(1) Filter isnotnull(_id#4)
+               :     :        +- *(1) FileScan csv [_id#4] Batched: false, Format: CSV, Location: InMemoryFileIndex[hdfs://localhost:9000/chapter5/race.csv], PartitionFilters: [], PushedFilters: [IsNotNull(_id)], ReadSchema: struct<_id:string>
+               :     +- *(3) Project [race_id#8, passenger_id#9]
+               :        +- *(3) Filter (isnotnull(race_id#8) && isnotnull(passenger_id#9))
+               :           +- *(3) FileScan csv [race_id#8,passenger_id#9] Batched: false, Format: CSV, Location: InMemoryFileIndex[hdfs://localhost:9000/chapter5/ticket.csv], PartitionFilters: [], PushedFilters: [IsNotNull(race_id), IsNotNull(passenger_id)], ReadSchema: struct<race_id:string,passenger_id:string>
+               +- BroadcastExchange HashedRelationBroadcastMode(List(input[0, string, true]))
+                  +- *(2) Project [id#0]
+                     +- *(2) Filter ((isnotnull(age#1) && (age#1 < 12)) && isnotnull(id#0))
+                        +- *(2) FileScan csv [id#0,age#1] Batched: false, Format: CSV, Location: InMemoryFileIndex[hdfs://localhost:9000/chapter5/passenger.csv], PartitionFilters: [], PushedFilters: [IsNotNull(age), LessThan(age,12), IsNotNull(id)], ReadSchema: struct<id:string,age:int>
